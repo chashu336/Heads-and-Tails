@@ -4,6 +4,11 @@
 
 int main(){
     int i,j=0,k=0,f;
+    char name[50];
+
+    printf("Who are you?\n>");
+    scanf("%s",name);
+    printf("Hello, %s!",name);
 
 
     printf("Tossing a coin...\n");
@@ -19,7 +24,7 @@ int main(){
     }
 
     printf("Heads: %d,Tails: %d\n",j,k);
-    if(j>k)printf("You won!");
-    else printf("You lost...");
+    if(j>k)printf("%s won!",name);
+    else printf("%s lost...",name);
     return 0;
 }
